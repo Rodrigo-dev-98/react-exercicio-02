@@ -1,15 +1,13 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Titulo from './Titulo';
 
 const Home = () => {
-    return (
-        <div>
-            <Titulo titulo="Home"/>
-            <h2>Essa é a página inicial</h2>
-        </div>
-    );
+  return (
+    <div>
+      <Titulo text="Home" />
+      <p>Essa é a página inicial do site.</p>
+    </div>
+  );
 };
 
 export default Home;

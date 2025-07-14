@@ -2,13 +2,13 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header>
-      <ul>
+    <header style={{backgroundColor: '#ccc', padding: '10px'}}>
+      <ul style={{backgroundColor: '#ccc', justifyContent: 'space-between', display: 'flex', padding: '10px', flexDirection: 'row', width: "30%", listStyle: 'none'}}>
         <li>
-          <a href="/">Home</a>
+          <a style={{textDecoration: 'none', color: 'black'}} href="/">Home</a>
         </li>
         <li>
-          <a href="/produtos">Produtos</a>
+          <a style={{textDecoration: 'none', color: 'black'}} href="/produtos">Produtos</a>
         </li>
       </ul>
     </header>
