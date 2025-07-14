@@ -1,19 +1,23 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
-import Form from './Form/Form';
-
-const Titulo = ({cor, texto, children}) => {
-  return <h1 style={{color: cor}}>{texto}, {children}</h1>
-}
+import Home from './Home';
+import Produtos from './Produtos';
 
 const App = () => {
+  const { pathname } = window.location;
+
+  let Component;
+  if (pathname === '/produtos') {
+    Component = Produtos;
+  } else {
+    Component = Home;
+  }
+
   return (
-    <>
+    <section>
       <Header />
-      <Form />
-      <Footer />
-    </>
+      <Component />
+    </section>
   );
 };
 
