@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './Header';
 import Home from './Home';
+import Footer from './Footer';
 import Produtos from './Produtos';
 
 const App = () => {
   const { pathname } = window.location;
-
   let Component;
   if (pathname === '/produtos') {
     Component = Produtos;
@@ -14,11 +14,13 @@ const App = () => {
   }
 
   return (
-    <section>
+    <div>
       <Header />
       <Component />
-    </section>
-  );
+      <Footer />
+    </div>
+  )
+
 };
 
 export default App;

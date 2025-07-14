@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Titulo = (props) => {
-  return <h1 style={{ color: '#4c8b64' }}>{props.titulo}</h1>;
+const Titulo = ({ text }) => {
+  return <h1 style={{ color: 'green' }}>{text}</h1>;
 };
 
 export default Titulo;
